@@ -1,0 +1,46 @@
+(2) TransC achieves the best results in both ac-
+curacy and F1-Score on both datasets. The second
+best one is TransD. (3) On M-YAGO39K, TransC
+(bern) is the best one. On YAGO39K, TransC
+(unif) and TransC (bern) have a very close perfor-
+mance. (4) Compared to YAGO39K, every model
+has a lower performance on M-YAGO39K. This
+may be because M-YAGO39K contains more nega-
+tive triples. In general, on YAGO39K, TransC has
+a better performance than other models in this
+task, which shows the good ability of TransC in
+knowledge graph classification. But, on M-YAGO39K,
+TransC still has better performance in terms of ac-
+curacy and precision, but worse performance in
+terms of recall and F1-Score.
+6 Conclusion
+In this paper, we have proposed a novel knowl-
+edge graph embedding model named TransC. To
+differentiate between concepts and instances, TransC
+encodes each concept as a sphere and each in-
+stance as a vector in the same semantic space. We
+use relative positions to model the relations be-
+tween concepts and instances (i.e., instanceOf) and
+the relations between concepts and sub-concepts
+(i.e., subClassOf). We have conducted extensive ex-
+periments on two datasets, YAGO39K and M-YAGO39K,
+and compared TransC with several state-of-the-
+art knowledge graph embedding models. The ex-
+perimental results show that TransC outperforms
+other models on both link prediction and triple clas-
+sification tasks. In particular, TransC effectively cap-
+tures the semantic transitivity for instanceOf and
+subClassOf relations. Our work represents an im-
+portant step towards modeling knowledge graphs
+with a deeper understanding of the distinction be-
+tween concepts and instances.
+7 Future Work
+In this paper, we focus on differentiating concepts
+and instances in knowledge graph embedding.
+However, there are many other aspects to be in-
+vestigated in this field, such as temporal informa-
+tion (Bordes et al., 2013) and properties (Socher
+et al., 2013). Besides, we can also improve our
+model with some machine learning techniques
+like cross-validation. We leave them as our future
+work.
